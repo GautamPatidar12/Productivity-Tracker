@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Productivity Extension",
+  "version": "1.0",
+  "description": "Boost your productivity with this Chrome extension",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "logo512.png"
+  },
+  "permissions": ["tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ]
+}
